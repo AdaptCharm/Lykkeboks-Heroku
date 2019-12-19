@@ -1,0 +1,9 @@
+/node_modules/
+/vendor/
+/storage/*.key
+/.idea/
+.DS_Store
+.sql
+ngrok
+*.iml
+*.xml

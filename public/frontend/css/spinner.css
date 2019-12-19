@@ -1,0 +1,114 @@
+.wheelSpinHolder {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wheelSpinHolder .wheelSpinBorder {
+    position: absolute;
+    top: 0;
+    border-left: #069 solid 10px;
+    border-right: #069 solid 10px;
+    box-sizing: border-box;
+}
+
+.wheelSpinHolder .wheelSpinSelect {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.wheelSpinHolder .wheelSpinHighlightBackground {
+    position: absolute;
+    top: 0;
+    border: #999 double 30px;
+    box-sizing: border-box;
+}
+
+.wheelSpinHolder .wheelSpinHighlight {
+    position: absolute;
+    top: 0;
+    border: #343a40 double 10px;
+    box-sizing: border-box;
+}
+
+.wheelSpinHolder .wheelSpinList {
+    position: relative;
+}
+
+.wheelSpinHolder .wheelSpinList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.wheelSpinHolder .wheelSpinList .prizeList {
+    display: table;
+    text-align: center;
+    color: #FFF;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+}
+
+.wheelSpinHolder .wheelSpinList .prizeList span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.wheelSpinHolder.fitImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wheelSpinHolder .flashing {
+    animation: highlight_blink .2s infinite;
+    box-shadow: inset 0 0 99px #343a40;
+}
+
+.wheelSpinMultipleHolder .wheelSpinHolder {
+    width: 32%;
+    float: left;
+}
+
+.wheelSpinMultipleHolder .wheelSpinHolder:nth-child(2) {
+    margin: 0 2%;
+}
+
+.wheelSpinMultipleHolder:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wheelSpinMultipleHolder .wheelSpinBorder {
+    border-left: #069 solid 5px;
+    border-right: #069 solid 5px;
+}
+
+.wheelSpinMultipleHolder .wheelSpinHighlightBackground {
+    border: #999 double 20px;
+}
+
+.wheelSpinMultipleHolder .wheelSpinHighlight {
+    border: #fff double 20px;
+}
+
+.wheelSpinMultipleHolder .flashing {
+    box-shadow: inset 0 0 30px #fff;
+}
+
+@keyframes highlight_blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+
+/*.wheelSpinList ul li{
+    width: 450px !important;
+    height: 225px !important;
+}*/
+.prizeText{
+    color: black !important;
+}
